@@ -1,0 +1,29 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:70vw;
+    height:70vh;
+    background-color: rgb(237, 235, 235);
+}
+.loader{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:10px solid greenyellow;
+    border-top: 10px solid red;
+    animation-name:loader;
+    animation-duration:1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+@keyframes loader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
